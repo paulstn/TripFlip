@@ -1,7 +1,16 @@
 export const pets = [
+
   {
     name: 'Armenia',
-    source: require('../../assets/Armenia.png'),
+    source: require('../../assets/armenia.png'),
+  },
+  {
+    name: 'Vietnam',
+    source: require('../../assets/vietnam.png'),
+  },
+  {
+    name: 'Ethiopia',
+    source: require('../../assets/ethiopia.png'),
   },
   {
     name: 'Japan',
@@ -10,6 +19,10 @@ export const pets = [
   {
     name: 'Costa Rica',
     source: require('../../assets/Costa_Rica.png'),
+  },
+  {
+    name: 'Singapore',
+    source: require('../../assets/singapore.png'),
   },
   {
     name: 'Myanmar',
