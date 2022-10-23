@@ -31,6 +31,12 @@ export default function Card({
     extrapolate: 'clamp',
   });
 
+  const saveOpacity = swipe.x.interpolate({
+    inputRange: [-ACTION_OFFSET, -25],
+    outputRange: [1, 0],
+    extrapolate: 'clamp',
+  });
+
   const animatedCardStyle = {
     transform: [...swipe.getTranslateTransform()],
   };
@@ -45,7 +51,7 @@ export default function Card({
             { opacity: likeOpacity },
           ]}
         >
-          <Choice type="yes" />
+          <Image source={require("../../assets/like1.png")} style={[{ width: 66, height: 68 }, {tintColor:"green"}]}/>
         </Animated.View>
         <Animated.View
           style={[
@@ -54,7 +60,7 @@ export default function Card({
             { opacity: nopeOpacity },
           ]}
         >
-          <Choice type="no" />
+          <Image source={require("../../assets/dislike.png")} style={[{ width: 66, height: 68 }, {tintColor:"red"}]}/>
         </Animated.View>
       </>
     );

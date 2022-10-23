@@ -10,8 +10,8 @@ export const CARD = {
 };
 
 export const COLORS = {
-  yes: '#00eda6',
-  no: '#ff006f',
+  like1: '#00eda6',
+  dislike: '#ff006f',
 };
 
 export const ACTION_OFFSET = 100;
